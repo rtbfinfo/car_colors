@@ -1,0 +1,66 @@
+<!-- A ceux qui, comme moi, n'ont rien d'autre à faire que lire la console des pages web. Salut Antoine Binamé !-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<meta property="og:title" content="Coup de chaud sur la Grande Boucle" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.rtbf.be/article/11267155" />
+	<meta property="og:description" content="COMMENT et POURQUOI nos voitures ont perdu DES COULEURS en 50 ans" />
+	<meta property="og:image" content="./pics/header.jpg">
+	<meta property="twitter:image" content="https://ds.static.rtbf.be/article/image/original/7/0/d/3a1dd98341fafc1dfe9bcf36360e6b84-1696573799.jpg">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@rtbfinfo">
+<meta name="twitter:title" content="COMMENT et POURQUOI nos voitures ont perdu DES COULEURS en 50 ans">
+<meta name="twitter:description" content="Une analyse en data et témoignage pour comprendre un étonnant phénomène">
+	<meta name="description" content="COMMENT et POURQUOI nos voitures ont perdu DES COULEURS en 50 ans" />
+
+	<title>COMMENT et POURQUOI nos voitures ont perdu DES COULEURS en 50 ans</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&amp;display=swap" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel='icon' type='image/png' href='./favicon.png'>
+	<link rel='stylesheet' href='./global.css'>
+	<link rel='stylesheet' href='./build/bundle.css'>
+
+	<script defer src='./build/bundle.js'></script>
+
+	<script src="https://public.flourish.studio/resources/embed.js"></script>
+
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
+</head>
+<body>
+
+	<script>
+
+	
+		//SCROLLBAR
+		
+		let processScroll = () => {
+		  let docElem = document.documentElement, 
+			docBody = document.body,
+			scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+			  scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+			scrollPercent = scrollTop / scrollBottom * 100 + '%';
+			
+			document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent); 
+		}
+		
+		document.addEventListener('scroll', processScroll);
+		
+		//SCROLLBAR
+		
+		</script>
+
+
+</body>
+</html>
