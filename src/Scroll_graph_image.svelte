@@ -95,6 +95,8 @@
 	  top: 0;
 	  margin: auto;
 	  margin-top: 70px;
+		transition: all 0.3s ease;
+
 	}
 	
 	.picture {
@@ -105,13 +107,9 @@ height: auto;
 	  margin: auto;
 	  position: absolute;
 		left: 0;
-	}
+		transition: all 0.3s ease;
 
-	.flourish-embed, .picture {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-	will-change: transform;
-}
+	}
 
 	/* Scrollytelling CSS */
 	.step {
