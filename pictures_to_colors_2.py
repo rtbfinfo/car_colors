@@ -6,16 +6,16 @@ import json
 def save_colors_to_csv(color_data):
     # Save to CSV
     df = pd.DataFrame(color_data, columns=['Color'])
-    df.to_csv('/Users/ambroisecarton/Desktop/cars_frames/colors.csv', index=False)
+    df.to_csv('./colors.csv', index=False)
 
 def main():
     # Initialize
-    image_dir = '/Users/ambroisecarton/Desktop/cars_frames/lundi'
+    image_dir = './path_to_folder_with_photos'
     image_files = sorted([f for f in os.listdir(image_dir) if f.endswith('.jpg')])
     total_images = len(image_files)
     processed_images = 0
     color_data = []
-    progress_file = "/Users/ambroisecarton/Desktop/cars_frames/progress.json"
+    progress_file = "json_to_save_progression.json"
 
     # Load progress if progress file exists
     if os.path.exists(progress_file):
